@@ -27,14 +27,28 @@ function Hero() {
         </Button>
 
 
-
+          
         <Button
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/tailson-moraes-355b49451/"
+          variant="primary"
           target="_blank"
           rel="noreferrer"
         >
-          LinkedIn <span aria-hidden="true">↗</span>
+          <span aria-hidden="true"><img width="48" height="48" src="https://img.icons8.com/badges/48/linkedin.png" alt="Linkedin"/></span> Linkedin
         </Button>
+
+        <Button
+          href="https://www.instagram.com/tailson.dev?cnvx=MTY0ejhmeXd2dTJ0Ng=="
+          variant="primary"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span aria-hidden="true"><img width="48" height="48" src="https://img.icons8.com/badges/48/instagram-new.png" alt="instagram-new"/></span> instagram
+        </Button>
+
+
+
+        
 
 
         <Button href="mailto:seuemail@exemplo.com">
