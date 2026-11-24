@@ -8,10 +8,10 @@ export const projects = [
     demo: "https://vercel.com/",
   },
   {
-    title: "App de Gestão de Tarefas",
+    title: "Fila Ao Vivo",
     description:
-      "Ferramenta colaborativa com atualizações em tempo real e equipes.",
-    technologies: ["TypeScript", "Firebase", "Tailwind CSS"],
+      "Ferramenta de acompanhamento de uma fila Ao Vivo.",
+    technologies: ["TypeScript", "Supabase", "Tailwind CSS","Css","React","JavaScript","MercadoPagoDeveloper"],
     link: "https://github.com/",
     demo: "https://vercel.com/",
   },
