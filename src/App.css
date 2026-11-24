@@ -124,8 +124,44 @@
   padding-inline: 16px;
   gap: 8px;
   font-size: 11px;
+  position: relative;
+  overflow: hidden;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
   transition: transform 0.22s ease, background 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+.hero-section__actions .social-button::before,
+.hero-section__actions .social-button::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -55%;
+  bottom: -55%;
+  left: 0;
+  width: 38%;
+  pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.5), transparent);
+  opacity: 0;
+}
+.hero-section__actions .social-button::before { animation: social-light-forward 6.4s linear infinite; }
+.hero-section__actions .social-button--linkedin::before { animation-delay: 1.067s; }
+.hero-section__actions .social-button--instagram::before { animation-delay: 2.133s; }
+.hero-section__actions .social-button::after { animation: social-light-backward 6.4s linear infinite; }
+.hero-section__actions .social-button--instagram::after { animation-delay: 3.2s; }
+.hero-section__actions .social-button--linkedin::after { animation-delay: 4.267s; }
+.hero-section__actions .social-button--github::after { animation-delay: 5.333s; }
+@keyframes social-light-forward {
+  0% { opacity: 0; transform: translateX(-180%) skewX(-22deg); }
+  2% { opacity: 0; }
+  5% { opacity: 0.75; }
+  16.667% { opacity: 0; transform: translateX(360%) skewX(-22deg); }
+  100% { opacity: 0; transform: translateX(360%) skewX(-22deg); }
+}
+@keyframes social-light-backward {
+  0% { opacity: 0; transform: translateX(360%) skewX(-22deg); }
+  2% { opacity: 0; }
+  5% { opacity: 0.75; }
+  16.667% { opacity: 0; transform: translateX(-180%) skewX(-22deg); }
+  100% { opacity: 0; transform: translateX(-180%) skewX(-22deg); }
 }
 .social-button__icon,
 .social-button__icon img {
