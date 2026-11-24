@@ -3,7 +3,7 @@
   margin-inline: auto;
 }
 .hero-section {
-  min-height: 620px;
+  min-height: 590px;
   padding: 88px 0 68px;
   display: flex;
   flex-direction: column;
@@ -228,16 +228,18 @@
 .section-kicker {
   color: #8e82ff;
   margin: 0 0 10px;
+  opacity: 0.72;
 }
 .section-heading h2 {
-  font-size: clamp(28px, 4vw, 38px);
+  color: #c8cfdd;
+  font-size: clamp(26px, 3.5vw, 34px);
   letter-spacing: -0.045em;
   line-height: 1.2;
   margin: 0;
   font-weight: 700;
 }
 .section-heading h2 span {
-  color: #9c8cff;
+  color: #8e82cc;
 }
 .section-heading > p:last-child {
   color: #8490a7;
