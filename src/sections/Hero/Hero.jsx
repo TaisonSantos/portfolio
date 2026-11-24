@@ -7,7 +7,7 @@ function Hero() {
         <span className="status-dot" /> Disponível para novos projetos
       </div>
       <h1 id="hero-title">
-        Oi, eu sou <span>Seu Nome.</span>
+        Oi, eu sou <span>Tailson Moraes.</span>
       </h1>
       <p className="hero-section__subtitle">
         Desenvolvedor Full Stack criando experiências digitais incríveis.
@@ -18,13 +18,16 @@ function Hero() {
       </p>
       <div className="hero-section__actions">
         <Button
-          href="https://github.com/"
+          href="https://github.com/TaisonSantos"
           variant="primary"
           target="_blank"
           rel="noreferrer"
         >
-          <span aria-hidden="true">⌘</span> GitHub
+          <span aria-hidden="true"><img width="48" height="48" src="https://img.icons8.com/badges/48/github.png" alt="github"/></span> GitHub
         </Button>
+
+
+
         <Button
           href="https://www.linkedin.com/"
           target="_blank"
@@ -32,6 +35,8 @@ function Hero() {
         >
           LinkedIn <span aria-hidden="true">↗</span>
         </Button>
+
+
         <Button href="mailto:seuemail@exemplo.com">
           Vamos conversar <span aria-hidden="true">↗</span>
         </Button>
