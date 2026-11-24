@@ -63,10 +63,17 @@
 }
 .hero-section h1 span {
   color: #9c8cff;
-  background: linear-gradient(100deg, #7d8eff 8%, #bd70ed 90%);
+  background: linear-gradient(110deg, #7d8eff 8%, #bd70ed 42%, #f5eaff 50%, #bd70ed 58%, #7d8eff 92%);
+  background-size: 200% 100%;
+  background-position: 100% 50%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: name-light-sweep 3.2s linear infinite alternate;
+}
+@keyframes name-light-sweep {
+  from { background-position: 100% 50%; }
+  to { background-position: 0% 50%; }
 }
 .hero-section__subtitle {
   color: #d3d9e6;
@@ -406,5 +413,6 @@
   *::after {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
+    animation: none !important;
   }
 }
