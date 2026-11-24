@@ -119,6 +119,41 @@
 .button--primary:hover {
   background: linear-gradient(110deg, #6552f2, #8067fa);
 }
+.hero-section__actions .social-button {
+  min-height: 43px;
+  padding-inline: 16px;
+  gap: 8px;
+  font-size: 11px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+  transition: transform 0.22s ease, background 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+.social-button__icon,
+.social-button__icon img {
+  display: block;
+  width: 43px;
+  height: 43px;
+}
+.social-button--github { border-color: #3d444d; background: #24292f; }
+.social-button--linkedin { border-color: #0a66c2; background: #0a66c2; }
+.social-button--instagram { border-color: #d84480; background: linear-gradient(110deg, #f58529, #e1306c 55%, #833ab4); }
+.hero-section__actions .social-button--github:hover {
+  background: #343b44;
+  border-color: #f0f6fc;
+  box-shadow: 0 4px 16px rgba(240, 246, 252, 0.12);
+  transform: translateY(-2px) scale(1.025);
+}
+.hero-section__actions .social-button--linkedin:hover {
+  background: #1478d4;
+  border-color: #0a66c2;
+  box-shadow: 0 4px 16px rgba(10, 102, 194, 0.2);
+  transform: translateY(-2px) scale(1.025);
+}
+.hero-section__actions .social-button--instagram:hover {
+  background: linear-gradient(110deg, #ff9a43, #f24882 55%, #9651c9);
+  border-color: rgba(225, 48, 108, 0.75);
+  box-shadow: 0 4px 16px rgba(225, 48, 108, 0.2);
+  transform: translateY(-2px) scale(1.025);
+}
 .scroll-cue {
   position: absolute;
   bottom: 24px;
@@ -398,6 +433,9 @@
   }
   .hero-section__actions .button {
     padding-inline: 12px;
+  }
+  .hero-section__actions .button.social-button {
+    padding-inline: 16px;
   }
   .hero-section {
     min-height: 550px;

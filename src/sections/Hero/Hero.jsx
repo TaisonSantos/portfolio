@@ -20,10 +20,11 @@ function Hero() {
         <Button
           href="https://github.com/TaisonSantos"
           variant="primary"
+          className="social-button social-button--github"
           target="_blank"
           rel="noreferrer"
         >
-          <span aria-hidden="true"><img width="48" height="48" src="https://img.icons8.com/badges/48/github.png" alt="github"/></span> GitHub
+          <span className="social-button__icon" aria-hidden="true"><img src="https://img.icons8.com/badges/48/github.png" alt="" /></span> GitHub
         </Button>
 
 
@@ -31,19 +32,21 @@ function Hero() {
         <Button
           href="https://www.linkedin.com/in/tailson-moraes-355b49451/"
           variant="primary"
+          className="social-button social-button--linkedin"
           target="_blank"
           rel="noreferrer"
         >
-          <span aria-hidden="true"><img width="48" height="48" src="https://img.icons8.com/badges/48/linkedin.png" alt="Linkedin"/></span> Linkedin
+          <span className="social-button__icon" aria-hidden="true"><img src="https://img.icons8.com/badges/48/linkedin.png" alt="" /></span> LinkedIn
         </Button>
 
         <Button
           href="https://www.instagram.com/tailson.dev?cnvx=MTY0ejhmeXd2dTJ0Ng=="
           variant="primary"
+          className="social-button social-button--instagram"
           target="_blank"
           rel="noreferrer"
         >
-          <span aria-hidden="true"><img width="48" height="48" src="https://img.icons8.com/badges/48/instagram-new.png" alt="instagram-new"/></span> instagram
+          <span className="social-button__icon" aria-hidden="true"><img src="https://img.icons8.com/badges/48/instagram-new.png" alt="" /></span> Instagram
         </Button>
 
 
