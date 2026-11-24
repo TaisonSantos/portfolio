@@ -1,0 +1,46 @@
+import Button from "../../components/Button/Button.jsx";
+
+function Hero() {
+  return (
+    <section className="hero-section" id="inicio" aria-labelledby="hero-title">
+      <div className="hero-section__eyebrow">
+        <span className="status-dot" /> Disponível para novos projetos
+      </div>
+      <h1 id="hero-title">
+        Oi, eu sou <span>Seu Nome.</span>
+      </h1>
+      <p className="hero-section__subtitle">
+        Desenvolvedor Full Stack criando experiências digitais incríveis.
+      </p>
+      <p className="hero-section__intro">
+        Transformo ideias em produtos digitais rápidos, acessíveis e feitos para
+        pessoas.
+      </p>
+      <div className="hero-section__actions">
+        <Button
+          href="https://github.com/"
+          variant="primary"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span aria-hidden="true">⌘</span> GitHub
+        </Button>
+        <Button
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          LinkedIn <span aria-hidden="true">↗</span>
+        </Button>
+        <Button href="mailto:seuemail@exemplo.com">
+          Vamos conversar <span aria-hidden="true">↗</span>
+        </Button>
+      </div>
+      <a className="scroll-cue" href="#projetos">
+        <span /> Explore meu trabalho
+      </a>
+    </section>
+  );
+}
+
+export default Hero;
