@@ -4,13 +4,27 @@ function ProjectCard({ project, index }) {
   return (
     <article className="project-card" style={{ "--card-order": index }}>
       <div className="project-card__art" aria-hidden="true">
-        <span className="art-orbit art-orbit--one" />
-        <span className="art-orbit art-orbit--two" />
-        <span className="art-window">
-          <i />
-          <i />
-          <i />
-        </span>
+        {project.video ? (
+          <video
+            className="project-card__video"
+            src={project.video}
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+          />
+        ) : (
+          <>
+            <span className="art-orbit art-orbit--one" />
+            <span className="art-orbit art-orbit--two" />
+            <span className="art-window">
+              <i />
+              <i />
+              <i />
+            </span>
+          </>
+        )}
       </div>
       <div className="project-card__body">
         <p className="project-card__number">PROJETO 0{index + 1}</p>
@@ -24,13 +38,17 @@ function ProjectCard({ project, index }) {
         <div className="project-card__actions">
           <Button
             href={project.link}
-            variant="primary"
             target="_blank"
             rel="noreferrer"
           >
             <span aria-hidden="true">↗</span> Código
           </Button>
-          <Button href={project.demo} target="_blank" rel="noreferrer">
+          <Button
+            href={project.demo}
+            variant="primary"
+            target="_blank"
+            rel="noreferrer"
+          >
             Ver projeto <span aria-hidden="true">↗</span>
           </Button>
         </div>

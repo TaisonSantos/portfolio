@@ -263,6 +263,14 @@
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
   transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
 }
+.project-card:has(.project-card__video) {
+  overflow: visible;
+  position: relative;
+}
+.project-card:has(.project-card__video):hover,
+.project-card:has(.project-card__video):focus-within {
+  z-index: 2;
+}
 .project-card:hover {
   transform: translateY(-5px);
   border-color: rgba(142, 125, 255, 0.45);
@@ -278,6 +286,31 @@
       transparent 62%
     ),
     linear-gradient(140deg, #282e69, #222749 60%, #252e50);
+}
+.project-card__video {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px 10px 0 0;
+  transform-origin: center;
+  transition: transform 0.28s ease;
+  pointer-events: none;
+}
+.project-card__art:has(.project-card__video) {
+  overflow: visible;
+}
+.project-card__art:has(.project-card__video):hover {
+  z-index: 3;
+}
+.project-card__art:has(.project-card__video):hover .project-card__video {
+  transform: scale(1.16);
+}
+.project-card__art:has(.project-card__video)::after {
+  display: none;
 }
 .project-card:nth-child(2) .project-card__art {
   background: radial-gradient(
@@ -393,9 +426,19 @@
   gap: 8px;
 }
 .project-card__actions .button {
+  flex: 1 1 0;
+  min-width: 0;
+  width: 100%;
   min-height: 31px;
   padding-inline: 11px;
   font-size: 9px;
+}
+.project-card__actions .button--secondary {
+  border-color: rgba(145, 156, 190, 0.25);
+  background: rgba(229, 236, 248, 0.08);
+}
+.project-card__actions .button--primary {
+  box-shadow: 0 5px 18px rgba(88, 67, 231, 0.32);
 }
 .site-footer {
   border-top: 1px solid rgba(146, 157, 184, 0.13);
