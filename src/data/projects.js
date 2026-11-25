@@ -10,10 +10,10 @@ export const projects = [
   {
     title: "Fila Ao Vivo",
     description:
-      "Ferramenta de acompanhamento de uma fila Ao Vivo.",
-    technologies: ["TypeScript", "Supabase", "Tailwind CSS","Css","React","JavaScript","MercadoPagoDeveloper"],
-    link: "https://github.com/",
-    demo: "https://vercel.com/",
+      "Ferramenta de acompanhamento de uma fila Ao Vivo com checkout transparente do mercadopago integrado.",
+    technologies: ["TypeScript", "Supabase", "Tailwind CSS","Css","React","JavaScript","HTML","MercadoPagoDeveloper"],
+    link: "https://github.com/TaisonSantos/FilaBarberOnline",
+    demo: "https://fila.tailson.dev/",
   },
   {
     title: "Gerador de Imagens com IA",
