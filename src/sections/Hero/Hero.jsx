@@ -3,11 +3,10 @@ import Button from "../../components/Button/Button.jsx";
 function Hero() {
   return (
     <section className="hero-section" id="inicio" aria-labelledby="hero-title">
-      <div className="hero-section__eyebrow">
-        <span className="status-dot" /> Disponível para novos projetos
-      </div>
-      <h1 id="hero-title">
-        Oi, eu sou <span>Tailson Moraes.</span>
+
+      <h1 id="hero-title" aria-label="Oi, eu sou Tailson Moraes.">
+        Oi, eu sou{" "}
+        <span>Tailson Moraes.</span>
       </h1>
       <p className="hero-section__subtitle">
         Desenvolvedor Full Stack criando experiências digitais incríveis.

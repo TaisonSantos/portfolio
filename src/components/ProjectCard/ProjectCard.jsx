@@ -1,5 +1,21 @@
 import Button from "../Button/Button.jsx";
 
+const technologyColors = {
+  React: "#61dafb",
+  "Node.js": "#83cd29",
+  MongoDB: "#47a248",
+  Stripe: "#8b80ff",
+  TypeScript: "#5ca7f2",
+  Supabase: "#3ecf8e",
+  "Tailwind CSS": "#38bdf8",
+  Css: "#a78bfa",
+  JavaScript: "#f7df1e",
+  HTML: "#ff7043",
+  MercadoPagoDeveloper: "#42b5ff",
+  OpenAI: "#74c9a5",
+  PostgreSQL: "#75a7ff",
+};
+
 function ProjectCard({ project, index }) {
   return (
     <article className="project-card" style={{ "--card-order": index }}>
@@ -32,7 +48,14 @@ function ProjectCard({ project, index }) {
         <p className="project-card__description">{project.description}</p>
         <ul className="tag-list" aria-label="Tecnologias usadas">
           {project.technologies.map((technology) => (
-            <li key={technology}>{technology}</li>
+            <li
+              key={technology}
+              style={{
+                "--technology-color": technologyColors[technology] || "#aab4ca",
+              }}
+            >
+              {technology}
+            </li>
           ))}
         </ul>
         <div className="project-card__actions">
