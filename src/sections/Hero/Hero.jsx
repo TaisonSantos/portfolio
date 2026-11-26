@@ -53,9 +53,15 @@ function Hero() {
         
 
 
-        <Button href="mailto:seuemail@exemplo.com">
+        <Button
+          href="https://wa.me/5571987872932"
+          className="social-button contact-button"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className="social-button__icon" aria-hidden="true"><img src="https://img.icons8.com/color/48/whatsapp--v1.png" alt="" /></span>
           Vamos conversar <span aria-hidden="true">↗</span>
-        </Button>
+        </Button >
       </div>
       <a className="scroll-cue" href="#projetos">
         <span /> Explore meu trabalho

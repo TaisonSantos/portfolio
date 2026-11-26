@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const PARTICLE_COUNT = 34;
+const PARTICLE_COUNT = 50;
 const CONNECTION_DISTANCE = 145;
 
 function TechBackground() {

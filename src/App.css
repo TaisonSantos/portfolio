@@ -145,10 +145,12 @@
 .hero-section__actions .social-button::before { animation: social-light-forward 6.4s linear infinite; }
 .hero-section__actions .social-button--linkedin::before { animation-delay: 1.067s; }
 .hero-section__actions .social-button--instagram::before { animation-delay: 2.133s; }
+.hero-section__actions .contact-button::before { animation-delay: 3.2s; }
 .hero-section__actions .social-button::after { animation: social-light-backward 6.4s linear infinite; }
 .hero-section__actions .social-button--instagram::after { animation-delay: 3.2s; }
 .hero-section__actions .social-button--linkedin::after { animation-delay: 4.267s; }
 .hero-section__actions .social-button--github::after { animation-delay: 5.333s; }
+.hero-section__actions .contact-button::after { animation-delay: 1.067s; }
 @keyframes social-light-forward {
   0% { opacity: 0; transform: translateX(-180%) skewX(-22deg); }
   2% { opacity: 0; }
@@ -172,6 +174,17 @@
 .social-button--github { border-color: #3d444d; background: #24292f; }
 .social-button--linkedin { border-color: #0a66c2; background: #0a66c2; }
 .social-button--instagram { border-color: #d84480; background: linear-gradient(110deg, #f58529, #e1306c 55%, #833ab4); }
+.contact-button {
+  border-color: #25d366;
+  color: #062b16;
+  background: #25d366;
+  box-shadow: 0 5px 18px rgba(37, 211, 102, 0.2);
+}
+.contact-button:hover {
+  border-color: #20bd5a;
+  background: #20bd5a;
+  box-shadow: 0 5px 18px rgba(37, 211, 102, 0.3);
+}
 .hero-section__actions .social-button--github:hover {
   background: #343b44;
   border-color: #f0f6fc;
